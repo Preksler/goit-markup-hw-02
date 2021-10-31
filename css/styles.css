@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primery-black-color: #000000;
+  --text-footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -28,41 +29,51 @@ body {
 .logo-header {
   color: var(--primery-black-color);
 }
+
 .logo-footer {
   color: var(--primary-white-color);
 }
+
 /* List style */
 .list {
   list-style: none;
 }
+
 /*site-nav*/
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
+.site-nav .active-page {
+  color: var(--accent-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-/* Контакты хедер */
+
+/* Contact header */
 .contact .link {
   font-weight: 500;
   color: var(--text-color);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
+
 /* Hero */
 .hero {
   text-align: center;
 }
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -72,6 +83,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 /* Button */
 .button {
   color: var(--primary-white-color);
@@ -81,4 +93,56 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-description {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* Feature */
+.feature-list .title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Our team */
+.command .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.command .description {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Address footer */
+.address .link {
+  color: var(--text-footer-contact-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.address .link-maps {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
 }
